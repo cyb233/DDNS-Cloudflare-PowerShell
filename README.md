@@ -1,6 +1,5 @@
 # DDNS Cloudflare PowerShell Script
 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/fire1ce/3os.org/tree/master/src)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org/)
 
 - DDNS Cloudflare PowerShell script for **Windows**.
@@ -32,7 +31,7 @@ To create a CloudFlare API token for your DNS zone go to [https://dash.cloudflar
 
 ## Installation
 
-[Download the DDNS-Cloudflare-PowerShell zip file](https://github.com/fire1ce/DDNS-Cloudflare-PowerShell/archive/refs/heads/main.zip) & Unzip,
+[Download the DDNS-Cloudflare-PowerShell zip file](https://github.com/cyb233/DDNS-Cloudflare-PowerShell/archive/refs/heads/main.zip) & Unzip,
 rename the folder to _DDNS-Cloudflare-PowerShell_ place in a directory of your choosing (e.g. _C:\DDNS-Cloudflare-PowerShell_)
 
 ## Config Parameters
@@ -90,7 +89,7 @@ Open cmd/powershell
 Example:
 
 ```bash
-powershell.exe [-ExecutionPolicy Bypass] -File "C:\DDNS-Cloudflare-PowerShell\update-cloudflare-dns.ps1"
+powershell.exe -ExecutionPolicy Bypass -File "C:\DDNS-Cloudflare-PowerShell\update-cloudflare-dns.ps1"
 ```
 
 ## Automation With Windows Task Scheduler
@@ -114,7 +113,7 @@ Run at boot with 1 min delay and repeat every 1 min
   - New...
   - Action: Start a Program
   - Program/script: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`
-  - Add arguments: `[-ExecutionPolicy Bypass] -File "C:\DDNS-Cloudflare-PowerShell\update-cloudflare-dns.ps1"`
+  - Add arguments: `-ExecutionPolicy Bypass -File "C:\DDNS-Cloudflare-PowerShell\update-cloudflare-dns.ps1"`
   - ok
   - Enter your user's password when prompted
 - **Conditions**
